@@ -1,0 +1,409 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "bourbon";
+
+
+@font-face {
+	font-family: 'Munro';
+	src: url('/assets/Munro.ttf');
+    src: url('/assets/Munro.ttf?iefix') format('truetype'),
+         url('/assets/MunroNarrow.ttf') format('truetype'),
+         url('/assets/MunroSmall.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+$pixel: "Munro";
+
+body {
+    background: linear-gradient(#6BEDFF, #7BFF66);
+    height: 100vh;
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    display: block;
+    margin-top: 0px;
+    bottom: 0px;
+
+}
+.logo_nav {
+	font-family: $pixel;
+	color: white;
+	font-size:30px;
+}
+
+/*========================================
+             LOGIN PAGE
+=========================================*/
+
+#homewrapper {
+	background-image: url("flappy.gif");
+	background-size: cover;
+    height: 100vh;
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    display: block;
+    margin-top: 0px;
+    bottom: 0px;
+    position: fixed;
+	
+	h1 {
+		position: fixed;
+	  	top: 15%;
+	  	left: 50%;
+	    transform: translate(-50%, -50%);
+		text-align:center;
+		font-smooth:never;
+		-webkit-font-smoothing: none;
+		font-family: $pixel;
+		color:white;
+		font-size: 80px;
+
+	}
+
+	#login_box {
+		position: fixed;
+	  	top: 50%;
+	  	left: 50%;
+	    transform: translate(-50%, -50%);
+		margin: 0 auto;
+		width: 450px;
+	    height: 240px;
+	    display: block;
+	    text-align:center;
+	    background: rgba(255, 255, 255, 0.5);
+	   	border-radius:10px;
+	}
+
+	.login_field {
+		margin-top: 50px;
+	    border: groove 1px;    
+	    border-radius:3px;
+	    margin-left:5px;
+	    font-family: $pixel;
+	    font-size:18px;
+	    width:160px;
+
+	}
+
+	.login_button {
+		@include linear-gradient(#6BEDFF, #7BFF66);
+	    padding:5px;
+	    width: 65px;
+	    border: none !important;    
+	    text-transform: uppercase;
+	    margin-left:5px;
+	    border-radius: 3px;
+	    font-family: $pixel;
+	    font-size:14px;
+	}
+
+	.sclick {
+	    margin:0 auto;
+	    text-align:center;
+	    width:200px;
+	    @include linear-gradient(#6BEDFF, #7BFF66);
+	    border-radius:3px;
+	    margin-top:40px;
+	    color:black;
+	}
+
+	.sbutton {
+    	color:black;
+    	font-family: $pixel;
+    	font-size:18px;
+    }
+}
+/*========================================
+             SIGNUP PAGE
+=========================================*/
+#signup_wrapper {
+	background-image: url("flap_bird.gif");
+	background-size: cover;
+    height: 100vh;
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    display: block;
+    margin-top: 0px;
+    bottom: 0px;
+    position: fixed;
+
+	p {
+		position: fixed;
+	  	top: 15%;
+	  	left: 70%;
+	    transform: translate(-50%, -50%);
+	    color: white;
+	    font-family:$pixel;
+	    font-size:80px;
+	}
+    .signup {
+    	position: fixed;
+	  	top: 50%;
+	  	left: 70%;
+	    transform: translate(-50%, -50%);
+		margin: 0 auto;
+        padding-top:10px;
+        padding-bottom:10px;
+        border:white 5px;
+        border-radius:5px;
+        width:35%;
+        text-align:center;
+        border-radius:10px;
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    .signup_info {
+        padding-top: 6px;
+        width: 50%;
+        font-family: $pixel;
+        font-size: 15px;
+        margin: 10px 0px 10px 0px;
+        border:none;
+        border-radius:5px;
+        margin-top:20px;
+    }
+    .signup_button {
+        width: 80px;
+        float:center;
+        @include linear-gradient(#6BEDFF, #7BFF66);
+        border-radius:5px;
+        font-family:$pixel;
+        font-size:17px;
+        border: none;
+    }
+
+    .back_button {
+        float:center;
+        width: 80px;
+        padding:4px 10px;
+        margin-left:10px;
+        text-align:center;
+        @include linear-gradient(#6BEDFF, #7BFF66);
+        font-family:$pixel;
+        font-size:19px;
+        border-radius:5px;
+    }
+}
+
+/*========================================
+          FORGOT PASSWORD PAGE
+=========================================*/
+#password_container {
+	background: linear-gradient(#6BEDFF, #7BFF66);
+    height: 100vh;
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    display: block;
+    margin-top: 0px;
+    bottom: 0px;
+    position: fixed;
+	
+	.password_box {
+		border: white 2px;
+		position: fixed;
+	  	top: 50%;
+	  	left: 50%;
+	    transform: translate(-50%, -50%);
+	    margin: 0 auto;
+        padding-top:10px;
+        padding-bottom:10px;
+        border:white 5px;
+        border-radius:5px;
+        width:40%;
+        text-align:center;
+        border-radius:10px;
+        background: rgba(255, 255, 255, 0.5);
+	}
+
+	h1 {
+		font-family: $pixel;
+	}
+
+	.emails {
+		font-family:$pixel;
+		font-size:20px;
+	}
+
+	.password_info {
+		
+        width: 50%;
+        font-family: $pixel;
+        font-size: 15px;
+        margin: 10px 0px 10px 0px;
+        border:none;
+        border-radius:5px;
+	}
+
+	.reset_button {
+		@include linear-gradient(#6BEDFF, #7BFF66);
+	    padding:5px;
+	    border: none !important;    
+	    text-transform: uppercase;
+	    margin-left:5px;
+	    border-radius: 3px;
+	    font-family: $pixel;
+	    font-size:14px;
+	}
+
+	.back_button {
+		margin-top:5px;
+        width: 80px;
+        padding:4px 10px;
+        margin-left:10px;
+        text-align:center;
+        @include linear-gradient(#6BEDFF, #7BFF66);
+        font-family:$pixel;
+        font-size:19px;
+        border-radius:5px;
+    }
+}
+
+/*========================================
+                NAVBAR
+=========================================*/
+.logo_nav {
+	font-family: $pixel;
+	color: white;
+	font-size:30px;
+}
+
+a:hover {
+	text-decoration:none;
+	color:white;
+}
+/*========================================
+               GAME PAGE
+=========================================*/
+
+.game_wrapper {
+	background: linear-gradient(#6BEDFF, #7BFF66);
+    height: 100vh;
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    display: block;
+    margin-top: 0px;
+    bottom: 0px;
+    position: fixed;
+
+	#game {
+		position: fixed;
+	  	top:65%;
+	   	left: 36%;
+	    transform: translate(-50%, -50%);
+  		margin: 0 auto;
+  		display:block;
+	}
+
+	li {
+		height:50px;
+		width:50px;
+	}
+}
+
+iframe {
+	float:right;
+	top:40%;
+	margin-right:70px;
+}
+
+.mani {
+	height:405px;
+	display:block;
+}
+
+.content {
+	margin-top:100px;
+}
+
+.bottom {
+	margin-top:20px;
+}
+
+h3 {
+	text-align:center;
+}
+
+ul {
+	list-style-type: none;
+}
+
+img {
+	height:150px;
+}
+
+.birdy {
+	height:40px;
+}
+
+/*========================================
+             PROFILE PAGE
+=========================================*/
+
+.wrapper {
+	margin: 0 auto;
+	margin-top:50px;
+
+	.side_column {
+		margin-top:20px;
+		float:left;
+		position: fixed;
+	}
+
+	h2 {
+		float:left;
+		margin-left: 180px;
+		font-size: 35px;
+	}
+
+	p {
+		font-size: 35px;
+	}
+
+	.right_side_profile {
+		margin:0 auto;
+		float:left;
+		width: 80%;
+		margin-left: 180px;
+	}
+
+	.edit_label {
+        float: left;
+        text-align: right;
+        margin-right: 15px;
+        width: 100px;
+        padding-top: 5px;
+        font-size:15px;
+	}
+
+	.edit_info {
+		margin:0 auto;
+        padding: 6px;
+        width: 300px;
+        font-family: Helvetica, sans-serif;
+        font-size: 15px;
+        margin: 10px 0px 10px 0px;
+	}
+
+	.update_button {
+		margin-top:20px;
+		margin-left:115px;
+        width: 80px;
+	}
+
+	.deletion {
+		color:red;
+		font-family: $pixel;
+		font-size:30px;
+		box-shadow: 3px 3px 6px black;
+	}
+}
